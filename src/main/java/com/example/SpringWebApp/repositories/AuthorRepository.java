@@ -1,4 +1,8 @@
 package com.example.SpringWebApp.repositories;
 
-public interface AuthorRepository {
+import com.example.SpringWebApp.domain.Author;
+import org.springframework.data.repository.CrudRepository;
+
+public interface AuthorRepository extends CrudRepository<Author,Long> {
+
 }
